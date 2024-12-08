@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:latest
+      run: docker build . --file Dockerfile --tag soupuwu/rtl_tcp:latest
     - name: Upload image to docker repository
       run: docker push soupuwu/rtl_tcp:latest
