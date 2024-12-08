@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # https://www.rtl-sdr.com/forum/viewtopic.php?f=1&t=2179
 # usage: ./rtlsn2dev.sh [serial number]
 # returns: device ID
