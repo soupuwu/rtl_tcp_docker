@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - uses: docker/login-action@v3.3.0
+      with:
+        username: soupuwu
+        password: ${{ secrets.DOCKER_TOKEN }}
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag soupuwu/rtl_tcp:latest
     - name: Upload image to docker repository
